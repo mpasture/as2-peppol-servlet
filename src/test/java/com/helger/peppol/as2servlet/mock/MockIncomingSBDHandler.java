@@ -14,28 +14,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.as2servlet.util;
+package com.helger.peppol.as2servlet.mock;
 
-import com.helger.as2lib.exception.OpenAS2Exception;
-import com.helger.as2lib.processor.receiver.AS2ReceiverModule;
+import javax.annotation.Nonnull;
 
-/**
- * A specialized {@link AS2ReceiverModule} implementation that disables the
- * active parts.
- * 
- * @author Philip Helger
- */
-public final class AS2ServletReceiverModule extends AS2ReceiverModule
+import org.unece.cefact.namespaces.sbdh.StandardBusinessDocument;
+
+import com.helger.commons.annotation.IsSPIImplementation;
+import com.helger.peppol.as2servlet.IAS2IncomingSBDHandlerSPI;
+
+@IsSPIImplementation
+public class MockIncomingSBDHandler implements IAS2IncomingSBDHandlerSPI
 {
-  @Override
-  public void doStart () throws OpenAS2Exception
+  public void handleIncomingSBD (@Nonnull final StandardBusinessDocument aSBD) throws Exception
   {
-    throw new UnsupportedOperationException ("Never start this module!");
-  }
-
-  @Override
-  public void doStop () throws OpenAS2Exception
-  {
-    throw new UnsupportedOperationException ("Never stop this module!");
+    // Do something with the incoming SBD
+    System.out.println (aSBD.toString ());
   }
 }

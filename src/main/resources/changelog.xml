@@ -17,8 +17,38 @@
     limitations under the License.
 
 -->
-<changelog xmlns="http://www.phloc.com/ns/changelog/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.phloc.com/ns/changelog/1.0 schemas/changelog-1.0.xsd" version="1.0" component="as2-peppol-servlet">
+<changelog xmlns="http://www.helger.com/xsd/changelog/1.0" version="1.0" component="as2-peppol-servlet">
+  <release date="2015-10-22" version="3.0.0" />
+  <entry date="2015-10-22" category="tech" action="update">
+    <change>
+      <text locale="en">Extracted the generic part into project as2-servlet</text>
+    </change>
+  </entry>
+  <release date="2015-10-19" version="2.2.1" />
+  <entry date="2015-10-19" category="tech" action="update">
+    <change>
+      <text locale="en">Updated to as2-lib 2.2.2 with Bouncy Castle 1.53</text>
+    </change>
+  </entry>
+  <release date="2015-10-16" version="2.2.0" />
+  <release date="2015-10-08" version="2.1.1" />
+  <entry date="2015-10-08" category="tech" action="update">
+    <change>
+      <text locale="en">Updated to as2-lib 2.2.1</text>
+    </change>
+  </entry>
+  <release date="2015-09-27" version="2.1.0" />
+  <entry date="2015-09-27" category="tech" action="update">
+    <change>
+      <text locale="en">Updated to as2-lib 2.2.0</text>
+    </change>
+  </entry>
+  <release date="2015-08-25" version="2.0.0" />
+  <entry date="2015-07-02" category="tech" action="update">
+    <change>
+      <text locale="en">Updated to ph-commons 6.0.0</text>
+    </change>
+  </entry>
   <release date="2015-03-12" version="1.0.1" />
   <release date="2014-09-29" version="1.0.0" />
 </changelog>

@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.helger.as2servlet.sbd;
+package com.helger.peppol.as2servlet;
 
 import javax.annotation.Nonnull;
 
 import org.unece.cefact.namespaces.sbdh.StandardBusinessDocument;
 
-import com.helger.commons.annotations.IsSPIInterface;
+import com.helger.commons.annotation.IsSPIInterface;
 
 /**
  * This is the SPI interface that must be implemented to handle incoming SBD
